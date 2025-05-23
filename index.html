@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel OCEAN-BLUE</title>
+    <link rel="stylesheet" href="../CSS/design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="../IMAGE/LOGO.png" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#booking">Bookings</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2 style="font-size: 50px;">WELCOME TO HOTEL OCEAN BLUE</h2>
+        <P style="font-size: 20px;">Experience luxury at its finest. Join us by clicking the Register button.</P><br>
+        <div>
+            <a href="../HTML/login.html" target="_blank">
+            <button type="button"><span></span>Log in</button></a>
+            <a href="../HTML/register.html" target="_blank">
+            <button type="button"><span></span>Register</button></a>
+           <div class="media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+        </div>
+    </div>
+
+    <section id="rooms" class="section">
+        <h2 class="section-title">OUR ROOMS</h2>
+        <div class="rooms-grid">
+            <div class="room-card">
+                <img src="../IMAGE/Ocean-View.webp" alt="Deluxe Room" class="room-image">
+                <div class="room-details">
+                    <h3>Deluxe Ocean View</h3>
+                    <p class="price">$199<span class="per-night"><span></span></p>
+                    <ul class="room-features">
+                        <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                        <li><i class="fas fa-utensils"></i> Breakfast included</li>
+                        <li><i class="fas fa-tv"></i> 42" Smart TV</li>
+                    </ul>
+                    <button class="book-now" type="button"><span></span>Book Now</button>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="../IMAGE/Executive-Suite.jpg" alt="Executive Suite" class="room-image">
+                <div class="room-details">
+                    <h3>Executive Suite</h3>
+                    <p class="price">$299<span class="per-night"><span></span></p>
+                    <ul class="room-features">
+                        <li><i class="fas fa-hot-tub"></i> Jacuzzi</li>
+                        <li><i class="fas fa-couch"></i> Separate living area</li>
+                        <li><i class="fas fa-wine-glass-alt"></i> Mini bar</li>
+                    </ul>
+                    <button class="book-now" type="button"><span></span>Book Now</button>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img src="../IMAGE/Presidential-Suite.jpg" alt="Presidential Suite" class="room-image">
+                <div class="room-details">
+                    <h3>Presidential Suite</h3>
+                    <p class="price">$499<span class="per-night"><span></span></p>
+                    <ul class="room-features">
+                        <li><i class="fas fa-swimming-pool"></i> Private pool</li>
+                        <li><i class="fas fa-concierge-bell"></i> 24/7 Butler</li>
+                        <li><i class="fas fa-umbrella-beach"></i> Private beach access</li>
+                    </ul>
+                    <button class="book-now" type="button"><span></span>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="section">
+        <div class="booking-form-container">
+            <h2 class="section-title">BOOK YOUR STAY</h2>
+            <form class="booking-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" name="room-type" required>
+                        <option value="" disabled selected>Select Room Type</option>
+                        <option value="deluxe">Deluxe Ocean View ($199/night)</option>
+                        <option value="executive">Executive Suite ($299/night)</option>
+                        <option value="presidential">Presidential Suite ($499/night)</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="check-in">Check-in Date</label>
+                        <input type="date" id="check-in" name="check-in" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="check-out">Check-out Date</label>
+                        <input type="date" id="check-out" name="check-out" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adults">Adults</label>
+                        <select id="adults" name="adults" required>
+                            <option value="1">1 Adult</option>
+                            <option value="2">2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adults</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="children">Children</label>
+                        <select id="children" name="children" required>
+                            <option value="0">No Children</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn"><span></span>Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2 class="section-title">GALLERY</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="../IMAGE/Lobby.jpg" alt="Luxury Lobby">
+                <div class="image-caption">Luxury Lobby</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../IMAGE/inpool.jpg" alt="Infinity Pool">
+                <div class="image-caption">Infinity Pool</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../IMAGE/spa.avif" alt="Spa Retreat">
+                <div class="image-caption">Spa Retreat</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../IMAGE/private.avif" alt="Private Beach">
+                <div class="image-caption">Private Beach</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../IMAGE/ovs.webp" alt="Ocean View Suite">
+                <div class="image-caption">Ocean View Suite</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../IMAGE/sunset.jpg" alt="Sunset Bar">
+                <div class="image-caption">Sunset Bar</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Hotel OCEAN-BLUE</h3>
+                <p>Experience luxury at its finest with our world-class amenities and breathtaking ocean views.</p>
+                <div class="footer-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#booking">Bookings</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Ocean View Drive, Beach City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@hoteloceanblue.com</li>
+                    <li><i class="fas fa-clock"></i> 24/7 Reception</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Hotel OCEAN-BLUE. All Rights Reserved.</p>
+        </div>
+    </section>
+</body>
+
+</html>
